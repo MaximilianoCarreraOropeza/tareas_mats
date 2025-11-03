@@ -5,8 +5,10 @@ const FILES_TO_CACHE = [
     './index.html',
     './main.js',
     'https://cdn.jsdelivr.net/npm/pouchdb@9.0.0/dist/pouchdb.min.js',
-    './styles.css'
-
+    './styles.css',
+    './images/icons/192.png',
+    './images/icons/512.png',
+    './manifest.json',
 ];
 
 self.addEventListener('install', (event) => {
