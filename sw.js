@@ -43,10 +43,7 @@ self.addEventListener('fetch', (event) => {
                 if (response) {
                     return response; 
                 }
-                return new Response('Recurso no disponible en caché', {
-                    status: 404,
-                    statusText: 'Not Found'
-                });
+                return fetch(event.request);
             })
     );
 });
